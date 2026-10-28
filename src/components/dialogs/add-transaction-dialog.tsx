@@ -147,7 +147,7 @@ export function AddTransactionDialog() {
               </div>
               <div className="min-w-0 flex-1">
                 <div className="flex items-center justify-between gap-2">
-                  <span className="text-xs font-bold text-[#00503a] truncate">
+                  <span className="text-xs font-bold text-[#00503a] leading-tight">
                     {targetAccount.name}
                   </span>
                   <span className="text-[10px] font-mono font-bold px-1.5 py-0.5 rounded bg-[#d1fae5] text-[#006a4e] shrink-0">

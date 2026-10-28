@@ -274,7 +274,7 @@ export function CompletionDialog() {
                 <div className="flex items-center justify-between">
                   <span className="text-[#6f7a73] font-semibold">Source (Debit)</span>
                   <div className="flex items-center gap-1 font-medium text-[#111827]">
-                    <span className="max-w-[130px] truncate">
+                    <span className="max-w-[180px] sm:max-w-[240px] truncate text-right">
                       {completionData.sourceAccountName || 'Source'}
                     </span>
                     <button
@@ -303,7 +303,7 @@ export function CompletionDialog() {
                 <div className="flex items-center justify-between">
                   <span className="text-[#6f7a73] font-semibold">Destination (Credit)</span>
                   <div className="flex items-center gap-1 font-medium text-[#111827]">
-                    <span className="max-w-[130px] truncate">
+                    <span className="max-w-[180px] sm:max-w-[240px] truncate text-right">
                       {completionData.destAccountName || 'Destination'}
                     </span>
                     <button
