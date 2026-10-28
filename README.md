@@ -13,7 +13,18 @@ An enterprise-grade, immutable double-entry transaction ledger and treasury mana
 
 ---
 
+### **Quick Documentation Directory**
+
+| Topic | Document | Description |
+| :--- | :--- | :--- |
+| **Detailed App Structure & Architecture** | **[`APP.md`](APP.md)** | Full system architecture, dual-engine design, database constraints, and state management. |
+| **Design System & UI Guidelines** | **[`DESIGN.md`](DESIGN.md)** | Color palette, typography tokens, component specifications, and mobile ergonomics. |
+| **API Documentation & RPC Reference** | **[`API.md`](API.md)** | PostgREST endpoints, stored procedures (`process_transaction`, `transfer_funds`), schemas, and error codes. |
+
+---
+
 ## Table of Contents
+- [Documentation Directory](#quick-documentation-directory)
 - [Architecture Overview](#architecture-overview)
 - [Key Features](#key-features)
 - [Quick Start (Local Run in Under 2 Minutes)](#quick-start-local-run-in-under-2-minutes)
@@ -23,13 +34,17 @@ An enterprise-grade, immutable double-entry transaction ledger and treasury mana
   - [Account ID Format (Option 1)](#account-id-format)
   - [Reference ID Format](#reference-id-format)
 - [Project Structure](#project-structure)
+- [Design System & UI Guidelines](#design-system--ui-guidelines)
 - [Scripts & Verification](#scripts--verification)
-- [Documentation](#documentation)
+- [Documentation Links](#documentation-links)
 - [License](#license)
 
 ---
 
 ## Architecture Overview
+
+> **Looking for the detailed architecture and system specification?**  
+> Redirect to **[`APP.md`](APP.md)** for exhaustive details on data flows, database constraints (`CHECK (balance >= 0)`), atomic stored procedures, and dual-engine fallback logic.
 
 ```mermaid
 graph TD
@@ -118,6 +133,9 @@ The Transaction Ledger application employs an automatic environment detection la
 
 ## Database Setup (Optional: PostgreSQL via Supabase)
 
+> **Looking for the complete API reference, RPC payloads, and error mappings?**  
+> Redirect to **[`API.md`](API.md)** for the complete PostgREST API documentation, stored procedure signatures, curl commands, and TypeScript SDK integration.
+
 To connect the application to a live Supabase PostgreSQL database:
 
 ### 1. Create a Supabase Project
@@ -177,6 +195,9 @@ Reference IDs are hyphen-free, alphanumeric tokens designed for clean auditabili
 
 ## Project Structure
 
+> **Looking for the comprehensive application structure and module specifications?**  
+> Redirect to **[`APP.md`](APP.md)** for detailed component trees, state management contracts, and database migration architecture.
+
 ```
 Tl_Api/
 ├── src/
@@ -202,6 +223,13 @@ Tl_Api/
 
 ---
 
+## Design System & UI Guidelines
+
+> **Looking for the UI design tokens, color scales, and mobile ergonomics?**  
+> Redirect to **[`DESIGN.md`](DESIGN.md)** for detailed specifications on our FinTech emerald theme, fluid typography, WCAG AA contrast rules, and touch target standards.
+
+---
+
 ## Scripts & Verification
 
 | Command | Action |
@@ -218,11 +246,16 @@ npm run build
 
 ---
 
-## Documentation
+## Documentation Links
 
-- **[System Architecture (APP.md)](APP.md)** — Core design principles, database constraints, and dual-engine architecture.
-- **[API Reference Manual (API.md)](API.md)** — Complete PostgREST endpoints, RPC stored procedures, request/response schemas, and error mappings.
-- **[Design System (DESIGN.md)](DESIGN.md)** — FinTech design tokens, mobile ergonomics, and typography standards.
+For specialized deep-dives, redirect to the dedicated documentation files:
+
+- 🏗️ **Detailed App Structure & System Architecture**: **[`APP.md`](APP.md)**  
+  Exhaustive coverage of dual-engine architecture, database schema constraints (`CHECK (balance >= 0)`), transaction immutability, state management, and file-based routing.
+- 🎨 **Design System & Visual Ergonomics**: **[`DESIGN.md`](DESIGN.md)**  
+  Comprehensive guidelines on the emerald FinTech color palette, typography scales, mobile responsive viewports (`100dvh`), and component micro-interactions.
+- 📡 **API Documentation & RPC Reference**: **[`API.md`](API.md)**  
+  Full PostgREST REST API endpoints, PostgreSQL stored procedures (`process_transaction`, `transfer_funds`), JSON schemas, error code mappings, and curl / TypeScript SDK examples.
 
 ---
 
