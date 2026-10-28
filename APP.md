@@ -193,3 +193,11 @@ Migrations located in [`supabase/`](supabase/):
 6. [`06_rpc_transfer_funds.sql`](supabase/06_rpc_transfer_funds.sql) — Stored procedure for atomic double-entry inter-account transfers.
 7. [`07_indexes.sql`](supabase/07_indexes.sql) — Indexes on account IDs, reference IDs, and timestamps.
 8. [`08_seed.sql`](supabase/08_seed.sql) — Clean seed records with Option 1 account IDs and hyphen-free references.
+
+---
+
+## **9. Related Documentation**
+
+- **[`API.md`](API.md)** — Detailed API Reference Manual with PostgREST schemas, RPC parameters, error codes, and curl/SDK code samples.
+- **[`README.md`](README.md)** — Developer Quickstart guide, local setup instructions, and architecture breakdown.
+- **[`DESIGN.md`](DESIGN.md)** — Design tokens, color system, and UI layout rules.

@@ -24,6 +24,7 @@ An enterprise-grade, immutable double-entry transaction ledger and treasury mana
   - [Reference ID Format](#reference-id-format)
 - [Project Structure](#project-structure)
 - [Scripts & Verification](#scripts--verification)
+- [Documentation](#documentation)
 - [License](#license)
 
 ---
@@ -214,6 +215,14 @@ To verify the project is healthy at any time:
 ```bash
 npm run build
 ```
+
+---
+
+## Documentation
+
+- **[System Architecture (APP.md)](APP.md)** — Core design principles, database constraints, and dual-engine architecture.
+- **[API Reference Manual (API.md)](API.md)** — Complete PostgREST endpoints, RPC stored procedures, request/response schemas, and error mappings.
+- **[Design System (DESIGN.md)](DESIGN.md)** — FinTech design tokens, mobile ergonomics, and typography standards.
 
 ---
 
