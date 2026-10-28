@@ -1,7 +1,7 @@
 # **Transaction Ledger System — System Architecture & Specification**
 
 **Document Status:** Current Production Specification  
-**Version:** 2.0.0  
+**Version:** 1.0.0  
 **Target Architecture:** Dual-Engine (Client-Side Reactive Mock & PostgreSQL Database-Driven API via Supabase)  
 **Primary Currency:** Indian Rupee (₹ / INR)
 
