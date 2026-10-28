@@ -543,3 +543,4 @@ export function useProcessTransaction(accountId: string) {
    In `transfer_funds`, operations always process the debit leg followed by the credit leg. Under high concurrent bidirectional transfers between Account A and Account B, transactions are wrapped inside standard PostgreSQL transaction isolation with automatic rollback on serialization failures.
 3. **Audit Trail Completeness**:  
    Because both legs of a transfer generate explicit rows in `transactions` with corresponding `dr` and `cr` suffixes, balance recalculation via `SUM(CASE WHEN type = 'credit' THEN amount ELSE -amount END)` mathematically equals `accounts.balance` at all times.
+
